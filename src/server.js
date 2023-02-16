@@ -16,6 +16,7 @@ const app = express();
 const port = 5555;
 
 // connection;
+mongoose.set("strictQuery", false);
 const DB =
   "mongodb+srv://sachin:sachin@cluster0.rp9nj2j.mongodb.net/raspberry?retryWrites=true&w=majority";
 mongoose
