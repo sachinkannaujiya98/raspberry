@@ -40,7 +40,7 @@ app.use(cors());
 app.get("/", async (req, res) => {
   //   _id = req.params.id;
   const raspberry = await Raspberry.find();
-  return res.status(200).json({ raspberry });
+  return res.status(200).json(raspberry);
 });
 
 app.post("/", async (req, res) => {
